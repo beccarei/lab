@@ -4,8 +4,8 @@ function validate_args() {
     if [ "$#" -ne 1 ]; then
         echo "Usage: $0 <namespace>"
         echo ""
-        echo "This Script will start the pod 'pvc-inspector' in the give namespace."
-        echo "The Pod will have access to the sih backups at '/backups'"
+        echo "This Script will start the pod 'pvc-inspector' in the given namespace."
+        echo "The Pod will have access to backups at '/backups'"
         echo "After the exec command is done, the pod will be deleted."
         exit 1
     fi
